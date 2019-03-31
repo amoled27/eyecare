@@ -1,0 +1,159 @@
+.gama-brand {
+    width: 20%;
+    min-height: 38px;
+    margin-right: 5px;
+    background: #e3b1d2;
+}
+
+.language-change {
+    top: 0;
+    background-color: #9a8686;
+    height: 115px;
+    width: 100%;
+    background: linear-gradient(#fbf6f9, #fdd5ef);
+}
+
+.fixed-topp {
+    /* top: 75px; */
+    padding: 0px;
+    background: #fcd6ef;
+}
+
+.gama-logo {
+    position: absolute;
+    width: 17%;
+    top: -47px;
+    padding-left: 1em;
+}
+
+.navbar-nav .active {
+    background: #b67fb7;
+}
+
+.navbar-nav li {
+    background: #e3b1d2;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.remains {
+    min-height: 40px;
+    background: #e3b1d1;
+    width: auto;
+    flex-grow: 100;
+}
+
+.main-row {
+    padding-top: 5em;
+}
+
+.text-field p {
+    font-size: 14px;
+}
+
+.footer label {
+    font-size: 13px;
+}
+
+label.form-check-label {
+    font-size: 13px;
+}
+
+.foot {
+    padding-top: 2em;
+    margin-top: 40px;
+    background: linear-gradient(#fdd5ef, #fbf6f9);
+    padding-bottom: 3em;
+}
+
+form {
+    width: 100%
+}
+
+input {
+    width: 100% !important;
+}
+
+/* fbf6f9 *
+/* f6e3ed */
+
+/* f2d6e6 */
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.ip-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.msg input {
+    height: 45px;
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        padding: 0px 12px 0px 17px
+    }
+
+    .gama-brand {
+        background: none;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .fixed-topp {
+        /* top: 54px; */
+    }
+
+    .gama-logo {
+        top: -25px;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
+    .gama-logo {
+        width: 22%;
+    }
+
+    .fixed-topp {
+        /* top: 54px; */
+    }
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+    .gama-logo {
+        width: 22%;
+        top: -14px;
+    }
+
+    .fixed-topp {
+        /* top: 45px; */
+    }
+}
+
+@media (max-width: 399px) {
+    .gama-logo {
+        width: 33%;
+        top: -14px;
+    }
+
+    .fixed-topp {
+        /* top: 45px; */
+    }
+}
