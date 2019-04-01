@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <title>Game Eye Care</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet/less" type="text/css" href="./css/style.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -19,11 +21,24 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="language-change">
-    
+        <span class="lang-box">
+            <a class="lang">
+                <span>
+                <img src="./images/portugal.png" class="img img-fluid" alt="">
+                    Pt</span>
+            </a>
+            <a class="lang">
+                <span>
+                <img src="./images/england.png" class="img img-fluid" alt="">
+                En</span>
+
+            </a>
+        </span>
     </div>
-    
+
     <nav class="navbar fixed-topp navbar-expand-lg navbar-light">
         <a class="navbar-brand gama-brand" href="#">
             <img src="./images/gama_eye_logo.png" alt="Gama eye care logo" class="img-fluid gama-logo">
@@ -47,7 +62,7 @@
                 </li>
             </ul>
 
-        <div class="remains"></div>
+            <div class="remains"></div>
         </div>
     </nav>
 
@@ -59,18 +74,25 @@
             <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8 col-xl-8">
                 <div class="text-field">
                     <p>Rita Gama é médica oftalmologista em Lisboa.</p>
-                    <p>Concluiu a Licenciatura em Medicina na Universidade de Lisboa e realizou o internato complementar de
-                    oftalmologia no Hospital de São José em Lisboa.</p>
-                    <p>Exerce funções como assistente hospitalar no Hospital da Luz, com dedicação especial às áreas de Estrabismo,
-                    Oftalmologia Pediátrica e Tomografia de Coerência Óptica. Colabora com os serviços de oftalmologia do
-                    Hospital Beatriz Ângelo e do Hospital de Vila Franca de Xira como orientadora e formadora.</p>
-                    <p>Como observadora integrou as equipas de oftalmologia pediátrica e estrabismo no Moorfields Eye Hospital, em
-                    Londres, e da do hospital 11 de Noviembre, na cidade do México. Completou o “Diplome inter-universitaire de
-                    Imagerie et pathologie rétinienne” da Université Diderot de Paris</p>
+                    <p>Concluiu a Licenciatura em Medicina na Universidade de Lisboa e realizou o internato complementar
+                        de
+                        oftalmologia no Hospital de São José em Lisboa.</p>
+                    <p>Exerce funções como assistente hospitalar no Hospital da Luz, com dedicação especial às áreas de
+                        Estrabismo,
+                        Oftalmologia Pediátrica e Tomografia de Coerência Óptica. Colabora com os serviços de
+                        oftalmologia do
+                        Hospital Beatriz Ângelo e do Hospital de Vila Franca de Xira como orientadora e formadora.</p>
+                    <p>Como observadora integrou as equipas de oftalmologia pediátrica e estrabismo no Moorfields Eye
+                        Hospital, em
+                        Londres, e da do hospital 11 de Noviembre, na cidade do México. Completou o “Diplome
+                        inter-universitaire de
+                        Imagerie et pathologie rétinienne” da Université Diderot de Paris</p>
                     <p>É autora dos livros “Estrabismo para totós” e “ABC da Diplopia”</p>
                     <p>
-                        Participa em múltiplas reuniões científicas nacionais e internacionais, é autora de várias publicações
-                        internacionais e organiza reuniões nacionais dedicadas à oftalmologia pediátrica e às actualizações em
+                        Participa em múltiplas reuniões científicas nacionais e internacionais, é autora de várias
+                        publicações
+                        internacionais e organiza reuniões nacionais dedicadas à oftalmologia pediátrica e às
+                        actualizações em
                         tomogafia de coerência óptica, incluindo a angiografia.
                     </p>
                     <p>
@@ -116,36 +138,38 @@
                     </label>
                 </div>
             </div>
-            
-            <div class="row ip-row inline-form nome ">
-                <label for="name" class="col-sm-1 col-form-label">Nome </label>
-              <div class="col-sm-11 ip-row pad-0 nome-ip">
-                    <input type="text" id="email" placeholder="Nome Completo" name="email">
-              </div>
+
+            <div class="row ip-row inline-form nome  lable-1">
+                <label for="name" class="col-sm-2 col-form-label">Nome Completo*</label>
+                <div class="col-sm-10 ip-row pad-0 nome-ip">
+                    <input type="text" id="email" placeholder="" name="email">
+                </div>
             </div>
-            <div class="row inline-form ">
-            <!-- <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 inline-form" style="padding: 0"> -->
-                <label for="name" class="col-sm-1 col-form-label tk">E-mail</label>
-                <div class="col-sm-5 ip-row pad-0 eml">
-                    <input type="text" placeholder="E-mail" name="email">
+            <div class="row inline-form  lable-1">
+                <!-- <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 inline-form" style="padding: 0"> -->
+                <label for="name" class="col-sm-2 col-form-label tk">E-mail</label>
+                <div class="col-sm-4 ip-row pad-0 eml">
+                    <input type="text" placeholder="" name="email">
                 </div>
 
-            <!-- </div> -->
-            <!-- <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 ip-row inline-form" style="padding: 0"> -->
-                <label for="name" class="col-sm-1 col-form-label tk">Telephone</label>
-                <div class="col-sm-5 ip-row pad-0 eml">
-                    <input type="text" placeholder="tele" name="email">
+                <!-- </div> -->
+                <!-- <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 ip-row inline-form" style="padding: 0"> -->
+                <div class="col-md-1 col-sm-1 col-lg-1"></div>
+                <label for="name" class="col-md-2 col-lg-1 col-sm-2 col-form-label tk">Telefone</label>
+                <div class="col-md-3 col-lg-4 col-sm-3 ip-row pad-0 eml">
+                    <input type="text" placeholder="" name="email">
                 </div>
-            <!-- </div> -->
+                <!-- </div> -->
             </div>
-            <div class="row ip-row msg inline-form">
-            <label for="name" class="col-sm-1 col-form-label">message</label>
-            <div class="col-sm-11 ip-row pad-0">
-                <input type="text" placeholder="tele" name="message">
-            </div>
-            
+            <div class="row ip-row msg inline-form lable-1">
+                <label for="name" class="col-sm-2 col-form-label">Mensagem</label>
+                <div class="col-sm-10 ip-row pad-0">
+                    <input type="text" placeholder="" name="message">
+                </div>
+
             </div>
         </div>
     </section>
 </body>
+
 </html>

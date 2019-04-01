@@ -1,0 +1,256 @@
+// Color variables (appears count calculates by raw css)
+@color0: #fbf5f8; // Appears 3 times
+@color1: #e3b1d2; // Appears 2 times
+@color2: #fbf6f9; // Appears 2 times
+@color3: #fdd5ef; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 100%; // Appears 3 times
+@width3: 22%; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height5: 35px; // Appears 4 times
+
+@margin1: 10px;
+
+.gama-brand {
+    background: @color1;
+    background: none;
+    margin-right: 5px;
+    min-height: 38px;
+    width: 20%;
+}
+
+.language-change {
+    background-color: #9a8686;
+    background: linear-gradient(@color2, @color3);
+    height: 115px;
+    top: 0;
+    width: @width0;
+}
+
+.fixed-topp {
+    background: #fcd6ef;
+    padding: 0px;
+}
+
+.gama-logo {
+    padding-left: 1em;
+    position: absolute;
+    top: -25px;
+    top: -47px;
+    width: 17%;
+}
+
+.navbar-nav {
+    .active {
+        background: #b67fb7;
+    }
+
+    li {
+        background: @color1;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+}
+
+.remains {
+    background: #e3b1d1;
+    flex-grow: 100;
+    min-height: 40px;
+    width: auto;
+}
+
+.main-row {
+    padding-top: 5em;
+}
+
+.text-field {
+    p {
+        font-size: 14px;
+    }
+}
+
+.footer {
+    label {
+        font-size: 13px;
+    }
+}
+
+label.form-check-label {
+    font-size: 13px;
+}
+
+.foot {
+    background: linear-gradient(@color3, @color2);
+    margin-top: 40px;
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
+
+form {
+    width: @width0;
+}
+
+input {
+    font-size: 13px;
+    width: @width0  !important;
+}
+
+.form-inline {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+
+    label {
+        margin: 5px 10px 5px 0;
+    }
+
+    input {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        margin: 5px 10px 5px 0;
+        padding: @margin1;
+        vertical-align: middle;
+    }
+}
+
+.ip-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: @margin1;
+    margin-top: @margin1;
+}
+
+.msg {
+    input {
+        height: 45px;
+    }
+
+    label {
+        background: @color0;
+        height: 44px;
+        margin-top: @margin1;
+    }
+}
+
+.pad-0 {
+    padding: 0px;
+}
+
+.tk {
+    background: @color0;
+    height: @height5;
+    margin-top: @margin1;
+}
+
+.eml {
+    input {
+        height: @height5;
+    }
+}
+
+.nome {
+    label {
+        background: @color0;
+        height: @height5;
+        margin-top: @margin1;
+    }
+}
+
+.nome-ip {
+    input {
+        height: @height5;
+    }
+}
+
+.gama-brand {
+    background: @color1;
+}
+
+
+.lang {
+    img {
+        width: 6%;
+    }
+}
+
+.lang-box {
+    float: right;
+    text-align: center;
+    margin-top:30px;
+}
+
+.lang {
+   margin: 20px;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/Aller_Std_Lt.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        padding: 0px 12px 0px 17px
+    }
+
+    .gama-brand {
+        background: none;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .fixed-topp {
+        /* top: 54px; */
+    }
+
+    .gama-logo {
+        top: -25px;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
+    .gama-logo {
+        width: @width3;
+    }
+
+    .fixed-topp {
+        /* top: 54px; */
+    }
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+    .gama-logo {
+        width: @width3;
+        top: -14px;
+    }
+
+    .fixed-topp {
+        /* top: 45px; */
+    }
+}
+
+@media (max-width: 399px) {
+    .gama-logo {
+        width: 33%;
+        top: -14px;
+    }
+
+    .fixed-topp {
+        /* top: 45px; */
+    }
+}
+
+@media (max-width: 700px) {
+    .lable-1 label {
+        font-size: @margin1  !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .foot {
+        padding: 1em;
+    }
+}
