@@ -72,6 +72,7 @@ form {
 
 input {
     width: 100% !important;
+    font-size: 13px
 }
 
 /* fbf6f9 *
@@ -100,10 +101,43 @@ input {
 .ip-row {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .msg input {
     height: 45px;
+}
+
+.pad-0 {
+    padding: 0px;
+}
+
+.msg label {
+    background: #fbf5f8;
+    height: 44px;
+    margin-top: 10px;
+}
+
+.tk {
+    background: #fbf5f8;
+    margin-top: 10px;
+    height: 34px;
+}
+
+.eml input {
+    height: 34px;
+}
+
+.nome label {
+    background: #fbf5f8;
+    margin-top: 10px;
+    height: 34px;
+
+}
+
+.nome-ip input {
+    height: 34px;
 }
 
 @media (max-width: 992px) {
