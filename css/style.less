@@ -17,8 +17,8 @@
     background: @color1;
     background: none;
     margin-right: 5px;
-    min-height: 38px;
-    width: 20%;
+    min-height: 34px;
+    width: 25%;
 }
 
 .language-change {
@@ -35,16 +35,17 @@
 }
 
 .gama-logo {
-    padding-left: 1em;
+    padding-left: 4.5em;
     position: absolute;
-    top: -25px;
-    top: -47px;
-    width: 17%;
+    top: -33px;
+    width: 20%;
+
 }
 
 .navbar-nav {
     .active {
         background: #b67fb7;
+        color: #fff;
     }
 
     li {
@@ -54,10 +55,15 @@
     }
 }
 
+.nav-item a {
+    color: #fff;
+}
+
+
 .remains {
     background: #e3b1d1;
     flex-grow: 100;
-    min-height: 40px;
+    min-height: 34px;
     width: auto;
 }
 
@@ -178,26 +184,58 @@ input {
 .lang-box {
     float: right;
     text-align: center;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .lang {
-   margin: 20px;
+    margin: 20px;
 }
 
+.nav-link {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.active a {
+    color: #fff !important;
+}
+
+
 @font-face {
-    font-family: 'MyWebFont';
-    src: url('../fonts/Aller_Std_Lt.ttf') format('truetype');
+    font-family: 'MyWebFont' !important;
+    src: url('../fonts/DINRegular.ttf') !important;
     /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
-@media (max-width: 992px) {
+
+@media (min-width: 1400px) {
+    .gama-logo {
+        padding-left: 6.5em;
+        position: absolute;
+        top: -33px;
+        width: 23%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .gama-logo {
+        padding-left: 9em;
+    }
+}
+
+@media (max-width: 993px) {
     .nav-item {
         padding: 0px 12px 0px 17px
     }
 
     .gama-brand {
         background: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .game-brand {
+        padding-left: 3em;
     }
 }
 
@@ -208,11 +246,13 @@ input {
 
     .gama-logo {
         top: -25px;
+        padding-left: 2.5em;
     }
 }
 
 @media (max-width: 599px) and (min-width: 500px) {
     .gama-logo {
+        padding-left: 1.5em;
         width: @width3;
     }
 
@@ -225,6 +265,8 @@ input {
     .gama-logo {
         width: @width3;
         top: -14px;
+        padding-left: 1.5em;
+
     }
 
     .fixed-topp {
@@ -235,7 +277,9 @@ input {
 @media (max-width: 399px) {
     .gama-logo {
         width: 33%;
-        top: -14px;
+        top: -37px;
+        padding-left: 1em;
+
     }
 
     .fixed-topp {
